@@ -1,10 +1,37 @@
 /* Google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
-body {
-    font-family: "Lato", sans-serif;
+/* CSS Variables */
+:root {
+    --primary-font: "Lato", sans-serif;
+    --secondary-font: "Oswald", cursive;
+    --primary-color: #0e0d0c; /* light black */
+    --secondary-color: #aa9581; /* light brown */
+    --highlight-color: #416a8e; /* blue */
+    --highlight-color-light: #7a9fc2; /* light blue */
 }
 
-h1 {
-    font-family: "Oswald", cursive;
+
+/* Global styles */
+
+body {
+    font-family: var(--primary-font);
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--secondary-font);
+    color: var(--primary-color);
+}
+
+.sub-heading-color {
+    color: var(--highlight-color);
+}
+#navbar{
+    background-color: var(--primary-color);
+}
+
+#navbar .logo {
+    width: 150px;
 }
